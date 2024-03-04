@@ -7,7 +7,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-// import jakarta.persistence.Transient;
 
 @Entity
 public class Utilisateur {
@@ -24,7 +23,6 @@ public class Utilisateur {
 	private boolean estBloque;
 	
 
-	// @Transient 
     private BigDecimal montantDepot = BigDecimal.ZERO;
 
 

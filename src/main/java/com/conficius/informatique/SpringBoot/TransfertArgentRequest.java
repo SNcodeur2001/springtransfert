@@ -3,44 +3,37 @@ package com.conficius.informatique.SpringBoot;
 import java.math.BigDecimal;
 
 public class TransfertArgentRequest {
-    private Long idUtilisateurSource;
-    private Long idUtilisateurDestinataire;
+    private Long numeroTelephoneSource;
+    private Long numeroTelephoneDestinataire;
     private BigDecimal montant;
 
-    // Constructeurs
-
     public TransfertArgentRequest() {
-        // Constructeur par défaut
     }
 
-    public TransfertArgentRequest(Long idUtilisateurSource, Long idUtilisateurDestinataire, BigDecimal montant) {
-        this.idUtilisateurSource = idUtilisateurSource;
-        this.idUtilisateurDestinataire = idUtilisateurDestinataire;
+    public TransfertArgentRequest(Long numeroTelephoneSource, Long numeroTelephoneDestinataire, BigDecimal montant) {
+        this.numeroTelephoneSource = numeroTelephoneSource;
+        this.numeroTelephoneDestinataire = numeroTelephoneDestinataire;
         this.montant = montant;
     }
 
-    // Getters
-
-    public Long getIdUtilisateurSource() {
-        return idUtilisateurSource;
+    public Long getNumeroTelephoneSource() {
+        return numeroTelephoneSource;
     }
 
-    public Long getIdUtilisateurDestinataire() {
-        return idUtilisateurDestinataire;
+    public Long getNumeroTelephoneDestinataire() {
+        return numeroTelephoneDestinataire;
     }
 
     public BigDecimal getMontant() {
         return montant;
     }
 
-    // Setters
-
-    public void setIdUtilisateurSource(Long idUtilisateurSource) {
-        this.idUtilisateurSource = idUtilisateurSource;
+    public void setNumeroTelephoneSource(Long numeroTelephoneSource) {
+        this.numeroTelephoneSource = numeroTelephoneSource;
     }
 
-    public void setIdUtilisateurDestinataire(Long idUtilisateurDestinataire) {
-        this.idUtilisateurDestinataire = idUtilisateurDestinataire;
+    public void setNumeroTelephoneDestinataire(Long numeroTelephoneDestinataire) {
+        this.numeroTelephoneDestinataire = numeroTelephoneDestinataire;
     }
 
     public void setMontant(BigDecimal montant) {
